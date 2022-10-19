@@ -7,7 +7,7 @@ this is an assessment that consist of six stages, complete each stage as you see
 
 ## _Prerequisites_
 
-This assessment requires running a k8s cluster (k3d ), you can run the cluster on your personal machine or for a better environment you can use any cloud service (Azure).
+This assessment requires running a k8s cluster (k3d ), you can run the cluster on your personal machine or for a better environment you can use any cloud service (GCP or Azure).
 
 To complete this assessment your machine need to have the following installed :
 
@@ -18,15 +18,15 @@ To complete this assessment your machine need to have the following installed :
 
 ## 1 - environment preparation
 
-This assessment uses a lightweight k8s cluster called k3d that can simulate a cluster of more than one node on your personal machine. 
-
-∴ the first part of the asseessment is to install _k3d_ or any other k8s cluster.
+This assessment uses a lightweight k8s cluster - check this URL [https://thechief.io/c/editorial/k3d-vs-k3s-vs-kind-vs-microk8s-vs-minikube/] :
+ 
+∴ the first part of the asseessment is to install cluster.
+∴ you can use k3d that can simulate a cluster of more than one node on your personal machine. 
 
 ## 2 - cluster preparation 
 
-Once k3d is installed, you can run the command `make cluster` in the root dirctory of the project, this command will create a k3d cluster of one node. once the cluster is created you can interact with it using `kubectl`.
-
-First, in order to prepare the cluster you will need to install _helm_ (the k8s package manager). 
+∴ Once the cluster is created you can interact with it using `kubectl`.
+∴ then , in order to prepare the cluster you will need to install _helm_ (the k8s package manager). 
 
 Afterwards, you need to install and deploy the following services to your cluster: 
 
@@ -35,18 +35,18 @@ Afterwards, you need to install and deploy the following services to your cluste
 
 ## 3 - service deployment
 
-- create a dockerfile for the nodejs sample service in the root dir.
+- create a dockerfile for sample project in Shopping folder [Shopping.API and Shopping.Client] in the root dir.
 - create a deployment file for the sample service with the following conditions :
     - set a soft limit and a hard limit on the service resources consumption.
     - deploy the service without root privileges.
     - limlit the deployment capabilities to only the necessary ones.
     - set the filesystem to be read only.
     - disallow privilege escalation.
-    - livenessProbe and readinessProbe must be set on the deployment file (you can find the health endpoit by browsing to /sample-service/index.js).
+    - livenessProbe and readinessProbe must be set on the deployment file (you can find the health endpoit by browsing to /Health/Index in both components).
 - create a service file for the sample service.
 - create an ingress file that exposes the sample service to outside of the cluster.
 
-all the resources mentioned above should exist on the same one namespace [assessment-node-app], and the service should be running and accessible. 
+all the resources mentioned above should exist on the same one namespace [shopping], and the service should be running and accessible. 
 
 ## 4 - CICD Pipeline 
 
@@ -63,7 +63,7 @@ all the resources mentioned above should exist on the same one namespace [assess
 
 ## 6 - bonus
 
-- use management secret tool to change seting on different environments
+- use management secret tool to change setings on different environments
 - create a canary deployment strategy using argo-rollouts with a good precentage
 
  ✨ Good Luck ✨
