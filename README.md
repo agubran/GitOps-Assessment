@@ -3,7 +3,7 @@
 
 hi...
 
-this is an assessment that consist of four stages, complete each stage as you see fit, then submit it to a github repo.
+this is an assessment that consist of six stages, complete each stage as you see fit, then submit it to a github repo.
 
 ## _Prerequisites_
 
