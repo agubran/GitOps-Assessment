@@ -20,13 +20,13 @@ To complete this assessment your machine need to have the following installed :
 
 This assessment uses a lightweight k8s cluster - check this URL [https://thechief.io/c/editorial/k3d-vs-k3s-vs-kind-vs-microk8s-vs-minikube/] :
  
-∴ the first part of the asseessment is to install cluster.
-∴ you can use k3d that can simulate a cluster of more than one node on your personal machine. 
+- the first part of the asseessment is to install cluster.
+- you can use k3d that can simulate a cluster of more than one node on your personal machine. 
 
 ## 2 - Cluster Preparation 
 
-∴ Once the cluster is created you can interact with it using `kubectl`.
-∴ then , in order to prepare the cluster you will need to install _helm_ (the k8s package manager). 
+- once the cluster is created you can interact with it using `kubectl`.
+- then , in order to prepare the cluster you will need to install _helm_ (the k8s package manager). 
 
 Afterwards, you need to install and deploy the following services to your cluster: 
 
