@@ -16,14 +16,14 @@ To complete this assessment your machine need to have the following installed :
 - WSL (in case you are running windows)
 
 
-## 1 - environment preparation
+## 1 - Environment Preparation
 
 This assessment uses a lightweight k8s cluster - check this URL [https://thechief.io/c/editorial/k3d-vs-k3s-vs-kind-vs-microk8s-vs-minikube/] :
  
 ∴ the first part of the asseessment is to install cluster.
 ∴ you can use k3d that can simulate a cluster of more than one node on your personal machine. 
 
-## 2 - cluster preparation 
+## 2 - Cluster Preparation 
 
 ∴ Once the cluster is created you can interact with it using `kubectl`.
 ∴ then , in order to prepare the cluster you will need to install _helm_ (the k8s package manager). 
@@ -33,7 +33,7 @@ Afterwards, you need to install and deploy the following services to your cluste
 - nginx ingress 
 - prometheus 
 
-## 3 - service deployment
+## 3 - Service Deployment
 
 - create a dockerfile for sample project in Shopping folder [Shopping.API and Shopping.Client] in the root dir.
 - create a deployment file for the sample service with the following conditions :
@@ -55,13 +55,13 @@ all the resources mentioned above should exist on the same one namespace [shoppi
     - stage 1 : build the sample service docker image and pushes it to dockerhub.
     - stage 2 : deploy the sample service to the cluster with a rollout strategy.
 
-## 5 - Argocd app
+## 5 - Argo-cd App
 
 - deploy argocd on your cluster and link it with this repo
 - create argo-cd application
 - save that application file with your code
 
-## 6 - bonus
+## 6 - Bonus
 
 - use management secret tool to change setings on different environments
 - create a canary deployment strategy using argo-rollouts with a good precentage
