@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "m2pRnm2Nj6TmV787bATWDJOtW+yulMmEw08IR4L6nDqFM6chgTsTw9Lz65LAICAMaT4chK682ziRr9JZ9v3XRw==",
+  "success": true,
+  "projectFilePath": "C:\\Github\\GitOps-Assessment\\Shopping\\Shopping.Client\\Shopping.Client.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\agubran\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.10.9\\microsoft.visualstudio.azure.containers.tools.targets.1.10.9.nupkg.sha512",
+    "C:\\Users\\agubran\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
+    "C:\\Users\\agubran\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.17\\microsoft.netcore.app.host.win-x64.5.0.17.nupkg.sha512",
+    "C:\\Users\\agubran\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\5.0.0\\microsoft.aspnetcore.app.ref.5.0.0.nupkg.sha512",
+    "C:\\Users\\agubran\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\5.0.0\\microsoft.windowsdesktop.app.ref.5.0.0.nupkg.sha512",
+    "C:\\Users\\agubran\\.nuget\\packages\\microsoft.netcore.app.ref\\5.0.0\\microsoft.netcore.app.ref.5.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
